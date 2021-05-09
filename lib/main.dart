@@ -1,18 +1,13 @@
-import "package:flutter/material.dart";
-import './app_screens/first_screen.dart';
+import 'package:flutter/material.dart';
 
-void main() => runApp(new MyFlutterApp());
+void main() {
+  runApp(MyApp());
+}
 
-class MyFlutterApp extends StatelessWidget {
-  @override
+class MyApp extends StatelessWidget {
+
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: "My Flutter App",
-        home: Scaffold(
-            appBar: AppBar(title: Text("My First App Screeen"),),
-            body: FirstScreen()
-        )
-    );
+    return MaterialApp( home: Text('Hello!'),);
   }
 }
+
