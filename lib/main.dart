@@ -5,9 +5,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp( home: Text('Hello!'),);
+    return MaterialApp( 
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('MyFirst App'),
+          ),
+          body: Text('This is my default text!'),
+      ),
+    );
   }
 }
 
